@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'evops1-nama' }
+    agent { label 'prod' }
 
     stages {
         stage('Pull SCM') {
