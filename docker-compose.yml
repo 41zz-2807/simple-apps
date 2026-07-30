@@ -2,6 +2,7 @@ version: "3.9"
 services:
   backend:
     build: ./apps
+    image: reg.zakaria.com/simpl-apps/simple-apps-aziz:v1
     restart: always
     links:
       - db
@@ -13,7 +14,7 @@ services:
       - DB_USER=peserta
       - DB_PASS=password
       - APP_PORT=3000
-    volumes:
+    volumes:  
       - app-data:/app/public/images
 
   db:
